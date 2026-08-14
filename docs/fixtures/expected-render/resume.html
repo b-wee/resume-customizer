@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Jordan Sample — Resume</title>
+<style>
+  /* ATS-safe single column. Letter, one page preferred. */
+  @page { size: letter; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #fff; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 10.5pt;
+    line-height: 1.32;
+    color: #1a1a1a;
+    padding: 0.55in 0.65in;
+  }
+  header { text-align: center; margin-bottom: 10pt; }
+  h1 {
+    font-size: 19pt;
+    font-weight: bold;
+    letter-spacing: 0.5pt;
+    margin-bottom: 2pt;
+  }
+  .contact-line {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    color: #333;
+  }
+  .contact-line a { color: #333; text-decoration: none; }
+  h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 1.2pt;
+    border-bottom: 0.75pt solid #1a1a1a;
+    padding-bottom: 1.5pt;
+    margin: 10pt 0 5pt;
+  }
+  .summary { margin-bottom: 2pt; }
+  .job { margin-bottom: 7pt; }
+  .job-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-title { font-weight: bold; }
+  .job-company { font-style: italic; }
+  .job-dates {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    color: #333;
+    white-space: nowrap;
+  }
+  ul { margin: 2pt 0 0 14pt; }
+  li { margin-bottom: 1.5pt; }
+  .edu-item { margin-bottom: 4pt; }
+  .skills p { margin-bottom: 1.5pt; }
+  .skills b { font-family: Helvetica, Arial, sans-serif; font-size: 9.5pt; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Jordan Sample</h1>
+    <div class="contact-line">Austin, TX &nbsp;·&nbsp; (555) 010-2030 &nbsp;·&nbsp; jordan.sample@example.com &nbsp;·&nbsp; linkedin.com/in/jordansample &nbsp;·&nbsp; github.com/jordansample</div>
+  </header>
+
+  <h2>Summary</h2>
+  <p class="summary">Senior backend engineer with 7 years of experience building payment systems at scale, including a zero-downtime multi-processor migration handling $40M/year in volume. Strong in Go, Python, PostgreSQL, and Kafka, with a track record of leading cross-team technical projects and mentoring engineers.</p>
+
+  <h2>Experience</h2>
+  <div class="job">
+    <div class="job-header">
+      <div><span class="job-title">Senior Software Engineer</span> — <span class="job-company">Meridian Health</span></div>
+      <div class="job-dates">Jun 2021 – Present</div>
+    </div>
+    <ul>
+      <li>Led 14-month migration from a legacy single-processor integration to a multi-processor platform (Stripe + Adyen), moving ~$40M/year in payment volume with zero downtime via shadow double-writes and per-merchant cutover flags.</li>
+      <li>Reduced declined-payment rate by 1.8 points by designing intelligent routing between payment processors in Go.</li>
+      <li>Built a payment retry and dunning system (Python/Celery) that recovered $2.1M in its first year.</li>
+      <li>Cut mean incident resolution time from ~90 to ~35 minutes by overhauling Datadog alerting and authoring team runbooks; run the payments on-call rotation.</li>
+      <li>Authored RFCs and drove architecture review for cross-team payment initiatives as de facto tech lead of a 5-engineer team; mentored 4 junior engineers, 2 promoted.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <div class="job-header">
+      <div><span class="job-title">Software Engineer</span> — <span class="job-company">Brightloop</span> (acquired 2021)</div>
+      <div class="job-dates">Jul 2019 – May 2021</div>
+    </div>
+    <ul>
+      <li>Built and rebuilt on Kafka a data ingestion pipeline processing ~2M orders/day from Shopify and Amazon APIs into PostgreSQL across ~180 customer accounts.</li>
+      <li>Migrated infrastructure from Heroku to AWS ECS with Terraform and GitHub Actions CI, cutting hosting costs ~45%.</li>
+      <li>Shipped the cohort-analysis feature (React + Django REST) credited with closing the company's two largest deals of the year.</li>
+    </ul>
+  </div>
+
+  <h2>Education</h2>
+  <div class="edu-item"><b>University of Texas at Austin</b> — B.S. Computer Science, Minor in Statistics (2019)</div>
+
+  <h2>Skills</h2>
+  <div class="skills">
+    <p><b>Languages:</b> Go, Python, TypeScript, SQL</p>
+    <p><b>Backend:</b> PostgreSQL, Kafka, Redis, Django, FastAPI, gRPC</p>
+    <p><b>Infrastructure:</b> AWS (ECS, RDS, S3, Lambda), Terraform, Docker, GitHub Actions, Datadog</p>
+    <p><b>Certifications:</b> AWS Solutions Architect Associate (2023)</p>
+  </div>
+</body>
+</html>

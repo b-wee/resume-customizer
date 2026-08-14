@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{NAME}} — Resume</title>
+<style>
+  /* ATS-safe single column. Letter, one page preferred. */
+  @page { size: letter; margin: 0.5in; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #fff; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 10pt;
+    line-height: 1.32;
+    font-variant-ligatures: none;
+    letter-spacing: 0.15pt;
+    color: #1a1a1a;
+    padding: 0;
+  }
+  header { text-align: center; margin-bottom: 10pt; }
+  h1 {
+    font-size: 17pt;
+    font-weight: bold;
+    letter-spacing: 0.5pt;
+    margin-bottom: 2pt;
+  }
+  .contact-line {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    color: #333;
+  }
+  .contact-line a { color: #333; text-decoration: none; }
+  h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 1.2pt;
+    border-bottom: 0.75pt solid #1a1a1a;
+    padding-bottom: 1.5pt;
+    margin: 10pt 0 5pt;
+  }
+  .summary { margin-bottom: 2pt; }
+  .job { margin-bottom: 7pt; break-inside: avoid; page-break-inside: avoid; }
+  .job-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-title { font-weight: bold; }
+  .job-company { font-style: italic; }
+  .job-dates {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9pt;
+    color: #333;
+    white-space: nowrap;
+  }
+  ul { margin: 2pt 0 0 14pt; }
+  li { margin-bottom: 1.5pt; }
+  .edu-item { margin-bottom: 4pt; }
+  .skills p { margin-bottom: 1.5pt; }
+  .skills b { font-family: Helvetica, Arial, sans-serif; font-size: 9.5pt; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>{{NAME}}</h1>
+    <div class="contact-line">{{CONTACT_LINE}}</div>
+  </header>
+
+  <h2>Summary</h2>
+  <p class="summary">{{SUMMARY}}</p>
+
+  <h2>Experience</h2>
+  {{EXPERIENCE}}
+  <!-- Repeating job block:
+  <div class="job">
+    <div class="job-header">
+      <div><span class="job-title">Title</span> — <span class="job-company">Company</span></div>
+      <div class="job-dates">Jun 2021 – Present</div>
+    </div>
+    <ul>
+      <li>Bullet</li>
+    </ul>
+  </div>
+  -->
+
+  <h2>Education</h2>
+  {{EDUCATION}}
+  <!-- Block:
+  <div class="edu-item"><b>University</b> — B.S. Major, Year</div>
+  -->
+
+  <h2>Skills</h2>
+  <div class="skills">
+  {{SKILLS}}
+  <!-- Lines like: <p><b>Languages:</b> Python, Go</p> -->
+  </div>
+</body>
+</html>

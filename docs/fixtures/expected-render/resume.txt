@@ -1,0 +1,61 @@
+Jordan Sample
+
+Austin, TX  ·  (555) 010-2030  ·  jordan.sample@example.com  · 
+linkedin.com/in/jordansample  ·  github.com/jordansample
+
+Summary
+
+Senior backend engineer with 7 years of experience building payment
+systems at scale, including a zero-downtime multi-processor migration
+handling $40M/year in volume. Strong in Go, Python, PostgreSQL, and
+Kafka, with a track record of leading cross-team technical projects and
+mentoring engineers.
+
+Experience
+
+Senior Software Engineer — Meridian Health
+
+Jun 2021 – Present
+
+- Led 14-month migration from a legacy single-processor integration to a
+  multi-processor platform (Stripe + Adyen), moving ~$40M/year in
+  payment volume with zero downtime via shadow double-writes and
+  per-merchant cutover flags.
+- Reduced declined-payment rate by 1.8 points by designing intelligent
+  routing between payment processors in Go.
+- Built a payment retry and dunning system (Python/Celery) that
+  recovered $2.1M in its first year.
+- Cut mean incident resolution time from ~90 to ~35 minutes by
+  overhauling Datadog alerting and authoring team runbooks; run the
+  payments on-call rotation.
+- Authored RFCs and drove architecture review for cross-team payment
+  initiatives as de facto tech lead of a 5-engineer team; mentored 4
+  junior engineers, 2 promoted.
+
+Software Engineer — Brightloop (acquired 2021)
+
+Jul 2019 – May 2021
+
+- Built and rebuilt on Kafka a data ingestion pipeline processing ~2M
+  orders/day from Shopify and Amazon APIs into PostgreSQL across ~180
+  customer accounts.
+- Migrated infrastructure from Heroku to AWS ECS with Terraform and
+  GitHub Actions CI, cutting hosting costs ~45%.
+- Shipped the cohort-analysis feature (React + Django REST) credited
+  with closing the company's two largest deals of the year.
+
+Education
+
+University of Texas at Austin — B.S. Computer Science, Minor in
+Statistics (2019)
+
+Skills
+
+Languages: Go, Python, TypeScript, SQL
+
+Backend: PostgreSQL, Kafka, Redis, Django, FastAPI, gRPC
+
+Infrastructure: AWS (ECS, RDS, S3, Lambda), Terraform, Docker, GitHub
+Actions, Datadog
+
+Certifications: AWS Solutions Architect Associate (2023)
