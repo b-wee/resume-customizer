@@ -8,7 +8,8 @@ All intelligence lives in the project skills under `.claude/skills/`.
 - `profile/` — master profile, human-editable Markdown. `jobs/` has one file per
   past job with frontmatter (company, title, location, start, end) and a
   freeform `# Raw description`. **Raw descriptions are append-only: never
-  rewrite, condense, or delete the user's words.**
+  rewrite, condense, or delete the user's words.** `preferences.md` holds the
+  user's style rules; it overrides the tailor skill's defaults.
 - `templates/resume.html` — ATS-safe single-column template with `{{PLACEHOLDER}}`
   slots; block structures documented in its HTML comments.
 - `scripts/render.sh <output-dir> <basename>` — renders `<output-dir>/resume.html`

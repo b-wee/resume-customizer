@@ -52,6 +52,7 @@ profile/                  your master profile (yours to edit, grows over time)
   summary.md              elevator pitch / positioning
   skills.md               everything you can do
   education.md            degrees, certifications
+  preferences.md          your style rules (bullet caps, punctuation, redactions)
   jobs/                   one file per past job, freeform detail
     2021-acme-senior-engineer.md
 templates/resume.html     ATS-safe single-column template ({{PLACEHOLDER}} slots)
